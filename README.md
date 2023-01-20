@@ -1,1 +1,42 @@
-# umbraco-introduction
+# Umbraco >Introdction
+
+## Setup a new Umbraco
+
+Run this command to make clean Umbraco 10 installation
+```
+# Ensure we have the latest Umbraco templates
+dotnet new -i Umbraco.Templates::10.4.0
+# Create solution/project
+dotnet new sln --name "MySolution"
+dotnet new umbraco --force -n "MyProject" --friendly-name "Administrator" --email "admin@example.com" --password "1234567890" --development-database-type SQLite
+dotnet sln add "MyProject"
+#Add Packages
+dotnet run --project "MyProject"
+#Running
+```
+
+## Show Umbraco Backoffice
+
+### But first make some documenttypes and templates
+- HomePage
+- LandingPage
+
+### Show Sections in Umbraco
+- Content
+- Media
+- Developer
+- User
+- Members
+- Translations
+
+## Modelsbuilder
+- Setup as a classlibrary
+
+##Controllers
+- SurfaceController - Post
+- Url Highjack controller
+- Api 
+
+## Good packages
+- [uSync](https://marketplace.umbraco.com/package/usync)
+- [Skybrud Umbraco Redirects](https://marketplace.umbraco.com/package/skybrud.umbraco.redirects)
