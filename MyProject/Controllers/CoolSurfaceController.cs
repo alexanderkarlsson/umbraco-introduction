@@ -36,10 +36,10 @@ namespace MyProject.Controllers
 
             TempData["CoolName"] = coolName;
 
-			var httpClient = new HttpClient();
-			var response = await httpClient.GetAsync($"{Request.Scheme}://{Request.Host.Value}/Cool/GetCoolerName?name={name}");
-			var responseValue = await response.Content.ReadAsStringAsync();
-			TempData["CoolName"] = responseValue;
+			//var httpClient = new HttpClient();
+			//var response = await httpClient.GetAsync($"{Request.Scheme}://{Request.Host.Value}/Cool/GetCoolerName?name={name}");
+			//var responseValue = await response.Content.ReadAsStringAsync();
+			//TempData["CoolName"] = responseValue;
 
 			return RedirectToCurrentUmbracoPage();
 		}
