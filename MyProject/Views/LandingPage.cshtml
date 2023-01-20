@@ -1,0 +1,17 @@
+﻿@using MyProject.Controllers;
+@using MyProject.Models;
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<LandingPageViewModel>
+<h1>@Model.Heading</h1>
+
+@if (string.IsNullOrEmpty(Model.CoolName))
+{
+    @using (Html.BeginUmbracoForm<CoolSurfaceController>("MakeItCool"))
+    {
+        <input type="text" name="name" />
+        <button type="submit">Make it cool</button>
+    }
+}else
+{
+    @Model.CoolName
+}

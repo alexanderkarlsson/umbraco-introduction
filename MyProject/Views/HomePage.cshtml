@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using ContentModels = MyProject.ContentModels.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@{
+	Layout = null;
+}
+
+@foreach(var block in Model.Blocks){
+	if (block.Content.ContentType.Alias == ContentModels.UmbBlockGridDemoHeadlineBlock.ModelTypeAlias)
+	{
+		@await Html.PartialAsync(block.Content.ContentType.Alias, block.Content)
+	}
+}
