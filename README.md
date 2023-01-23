@@ -1,6 +1,14 @@
 # Umbraco >Introdction
 
-## Setup a new Umbraco
+What to learn today?
+- Install Umbraco
+- Umbraco Backoffice
+- Modelsbuilder
+- Control(lers)
+
+## Install Umbrco, Setup a new Umbraco
+
+[Package Script Writer](https://psw.codeshare.co.uk/)
 
 Run this command to make clean Umbraco 10 installation
 ```
@@ -30,13 +38,27 @@ dotnet run --project "MyProject"
 - Translations
 
 ## Modelsbuilder
-- Setup as a classlibrary
+- Setup as a new classlibrary, MyProject.ContentModels
+- Set app settings
+```
+"Umbraco": {
+    "CMS": {
+      "ModelsBuilder": {
+        "ModelsMode": "SourceCodeManual",
+        "ModelsDirectory": "~/../MyProject.ContentModels/Models",
+        "AcceptUnsafeModelsDirectory": true,
+        "ModelsNamespace": "MyProject.ContentModels.Models"
+      }
+    }
+  }
+```
 
-##Controllers
+## Controllers
 - SurfaceController - Post
-- Url Highjack controller
-- Api 
+- Url Highjack controller - Routes
+- UmbracoApiController - API 
 
 ## Good packages
+Nuget packages
 - [uSync](https://marketplace.umbraco.com/package/usync)
 - [Skybrud Umbraco Redirects](https://marketplace.umbraco.com/package/skybrud.umbraco.redirects)
