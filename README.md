@@ -1,5 +1,11 @@
 # Umbraco >Introdction
 
+Links
+- [Who uses Umbraco](https://umbraco.com/explore-umbraco-benefits/who-uses-umbraco/)
+- [Umbraco i Sverige](https://umbraco.se/)
+- [Marketplace](https://marketplace.umbraco.com/)
+- [24 days in](https://24days.in/umbraco-cms/2022/)
+
 What to learn today?
 - Install Umbraco
 - Umbraco Backoffice
